@@ -55,6 +55,7 @@ int onlyletter(char* p2char)
 	{
 		if(((*p2char)<='Z' && (*p2char)>='A') || ((*p2char)<='z' && (*p2char)>='a'));
 		else return -1;
+		p2char++;
 	}
 	return 0;
 }

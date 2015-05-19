@@ -15,11 +15,11 @@ int main(int argc, char* argv[])
 	
 	if(argc!=3)			//verifico que se hayan introducido dos palabras
 	{
-		printf("Se ha introducido una cantidad incorrecta de palabras. Por favor introduzca dos palabras.\n");
+		printf("\nSe ha introducido una cantidad incorrecta de palabras. Por favor introduzca dos palabras.\n\n");
 		return 0;
 	}
 
-	if(onlyletter(mje1)==-1 || onlyletter(mje2)==-1)	//Verifico que las palabras ingresadas solo contengan letras
+	if((onlyletter(mje1)==-1) || (onlyletter(mje2)==-1))	//Verifico que las palabras ingresadas solo contengan letras
 	{
 		printf("\nLos datos ingresados no son validos. El programa solo admite dos palabras (formadas solo por letras).\n\n");
 		return 0;
