@@ -19,6 +19,12 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 
+	if(onlyletter(mje1)==-1 || onlyletter(mje2)==-1)	//Verifico que las palabras ingresadas solo contengan letras
+	{
+		printf("\nLos datos ingresados no son validos. El programa solo admite dos palabras (formadas solo por letras).\n\n");
+		return 0;
+	}
+
 	printf("\n%s \n%s \n\n",mje1,mje2);		//Imprimo las palabras que se pasan por línea de comando
 
 
