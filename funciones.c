@@ -19,7 +19,7 @@ int sort(char arreglo1[], char arreglo2[],int num1,int num2)
 			state=1;				//Si se haya coincidencia, lo indico con la variable state
 			(*(arreglo2+j))=0;			// y cambio ambos elementos a 0 para no utilizarlos cuando
 			(*(arreglo1+i))=0;			// compare elementos más adelante.
-			i=num1;						//Una vez hayada la coindicencia adelanto el
+			i=num1;			o			//Una vez hayada la coindicencia adelanto el
 			}						// índice para acelerar el proceso.
 		}
 		if(state==0)					//Si no hay coincidencia, entonces la segunda palabra
@@ -49,7 +49,6 @@ int sort(char arreglo1[], char arreglo2[],int num1,int num2)
 
 //funcion onlyletter, recibe un puntero al principio de un string//
 //devuleve un cero si el string solo contiene letras, caso contrario devuelve -1//
-
 int onlyletter(char* p2char)
 {
 	while(*p2char!='\0')
